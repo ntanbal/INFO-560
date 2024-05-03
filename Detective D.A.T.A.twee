@@ -1,0 +1,887 @@
+:: StoryTitle
+Detective D.A.T.A
+
+
+:: StoryData
+{
+  "ifid": "F9A3861A-49C2-4FCD-A059-2A09EC983A21",
+  "format": "Harlowe",
+  "format-version": "3.3.8",
+  "start": "Welcome",
+  "zoom": 1
+}
+
+
+:: \ EasyAct1 [start] {"position":"800,375","size":"100,100"}
+At the Museum of Antiques, things are chaotic as Dr. Emily Wright reveals the Sunstone's disappearance. It was stolen late last night during the thundering rain! Dive into the investigation, search for clues, and talk to others to gather information!
+
+[[Talk to Dr. Emily Wright->EasyEmilyWright]]
+
+
+:: \ EasyArtworkGallery [gallery] {"position":"900,1000","size":"100,100"}
+As you enter the art gallery, you're surrounded by the serene atmosphere and the faint scent of fresh paint. You're captivated by the beautiful paintings and sculptures that fill the space. Each artwork tells a unique story, and you're eager to discover the hidden meanings behind them.
+
+You see a cool sculpture with smooth lines and lots of little details that you want to touch. And there's a colorful painting nearby that looks like it's moving in the light. Which one do you want to look at first?
+
+[[Explore the sculpture ->EasySculpture]]
+[[Admire the painting->EasyPainting]]
+
+
+:: \ EasyExploreCafe [cafe] {"position":"300,1225","size":"100,100"}
+As you glance around the cafe, you spot comfy chairs where people are chatting happily. Over by the counter, there's a tempting display of cookies and cakes that fill the air with a sweet smell.
+
+You can't help but notice a colorful board with posters advertising upcoming events, like music shows and art exhibits.
+
+Something catches your eye on the table behind Professor Samuel Hayes – a mysterious sticky note. And near the garbage can, you spy something shiny peeking out from the trash.
+
+Investigate:
+[[Distract Professor Hayes to check the table->EasyCheckTable]]
+[[Check Garbage Can ->EasyGarbageCan]]
+
+Talk to Professor Hayes:
+[[Maybe I'll talk to Professor Hayes ->EasyProfessoSamuelHayesAgain]]
+
+Locations:
+[[Nevermind, I'll check the Artwork Gallery -> EasyArtworkGallery]]
+[[Maybe I'll investigate the OutdoorExhibit->EasyOutdoorExhibit ]]
+
+
+:: \ EasyExploreGallery [gallery] {"position":"1050,1400","size":"100,100"}
+As you glance over at Mr. Finch, you notice a notebook lying open next to him, filled with scribbled notes and appointments. Perhaps examining it could help verify his whereabouts this morning and confirm if he was telling the truth about attending the charity fundraiser.
+
+Turning your attention to the nearby painting plaques, you spot one that appears to have been vandalized, with scratches and smudges on the surface. Could this be a clue related to the missing Sunstone, or simply a random act of mischief? It might be worth investigating further to see if there are any connections.
+
+Talk to Mr. Finch:
+[[Talk to Mr. Finch->EasyFinchAgain]]
+
+Investigate:
+[[Investigate the vandalized plaque->EasyVandalizedPlaque ]]
+[[Ask to look into Mr. Finch's notebook->EasyFinchNotebook]]
+
+
+
+
+:: \ EasyMorningFinch [gallery] {"position":"875,1400","size":"100,100"}
+He folds his arms across his chest, a sly grin creeping onto his face. "But since you asked so nicely, I'll humor you. I spent my morning attending a charity fundraiser, surrounded by witnesses who can vouch for my whereabouts." He looks at you smugly.
+
+Talk to Mr. Finch:
+[[Talk to Mr. Finch ->EasyFinchAgain]]
+
+
+:: \ EasyMorningProfessor [cafe] {"position":"600,1175","size":"100,100"}
+"In my office," he answers quickly. "Why do you ask?"
+
+He glances at his shoes and yawns, "I must continue with my research. After all, it's better than being accused of being a thief!"
+
+Talk to Professor Hayes:
+[[Talk to Professor Hayes->EasyProfessoSamuelHayesAgain]]
+
+
+
+
+:: \ EasyProfessorSamuelHayes [cafe] {"position":"425,1100","size":"100,100"}
+"Oh, that looks good," says a stern voice.
+
+You turn around and are introduced to Professor Samuel Hayes who is an archaeologist at the local University who sometimes acts as a consultant for the museum.
+
+"Ah, Detective Data, isn't it?" Professor Hayes says, eyeing you with suspicion. "I heard you're on the case. Well, don't expect me to spill any beans. I've got my own theories, you know."
+
+Talk to Professor Hayes:
+[[Ask about theories->EasyTheories]]
+[[Ask where he was early in the morning -> EasyMorningProfessor]]
+[[Ask about his shoes->ProfessorShoes]]
+
+Locations:
+[[Current Location: Explore the Cafe-> EasyExploreCafe]]
+
+
+:: \ EasyTrashCan [cafe] {"position":"175,1550","size":"100,100"}
+<img src = "https://imgur.com/R8LIerE.png" >
+
+[[Dust for fingerprints->HayesTrashFingerprints]]
+[[Distract Professor Samuel Hayes to check the table->EasyCheckTable]]
+
+[[Talk to Professor Hayes again->EasyProfessoSamuelHayesAgain]]
+
+
+
+
+:: \ ExploreOutdoor [outside] {"position":"1650,1300","size":"100,100"}
+As you survey the Outdoor Exhibit, your eyes catch on some disturbed plants. The soil around them appears unsettled, as if something may have been buried beneath the surface. It raises questions about what could be hidden there and why.
+
+Behind the vines, you spot Dr. Olivia's backpack. It's bulky and large, quite unlike her usual sleek and compact style. You can't help but wonder if there's more to it than meets the eye. Could she be hiding something?
+
+Investigate:
+[[Investigate the soil->SoilInvestigation]]
+
+Talk to Dr. Olivia:
+[[Ask if you can look in her backpack->AskOliviaBackpack]]
+
+
+:: \ HayesArrested [caught] {"position":"150,3050","size":"100,100"}
+With the culprit behind bars, the stolen Sunstone is recovered and returned to its rightful place in the museum. Dr. Emily Wright expresses her gratitude for your dedication and skill in solving the case.
+
+As you leave the museum, you can't help but feel a sense of satisfaction knowing that you've successfully cracked the case and brought closure to the mystery of the stolen Sunstone. Another case closed for Detective D.A.T.A.!
+
+
+:: AskOliviaBackpack [outside] {"position":"1850,1575","size":"100,100"}
+Dr. Olivia hesitates for a moment before shaking her head firmly. "I'm sorry, but I can't allow that," she responds, her tone guarded. "It contains personal items and sensitive research materials that I'd rather keep private."
+
+[[Let Dr. Olivia keep her backpack -> ExploreOutdoor]]
+[[Create a distraction to sneak into her backpack->DistractionBackpack]]
+
+
+:: BeginExploration [start] {"position":"825,775","size":"100,100"}
+"Dr. Emily smiled warmly. 'Oh great! I'm glad I could inform you a bit. Feel free to explore different areas of the museum, along with seeing the crime scene,' she said cheerfully, gesturing towards the direction of the crime scene.
+
+[[See the scene of the crime of the missing Sunstone->ViewSunstone]]
+
+
+
+:: DefineDrOliviaParker [start] {"position":"1400,600","size":"100,100"}
+"Dr. Olivia Parker is a bit mysterious," Dr. Emily remarked, her tone thoughtful. "She's new to our museum, but she knows a lot about ancient artifacts."
+
+She paused, thinking about Dr. Parker's possible reasons. "Maybe she wants the Sunstone for personal reasons. Or maybe she thinks it'll help with her research or get her more funding. It's hard to know for sure."
+
+[[Who is Marcus Finch?->DefineMarcusFinch]]
+[[Who is Professor Samuel Hayes->DefineProfessorSamuelHayes]]
+[[I think I have learned enough, I am ready to explore->BeginExploration]]
+
+
+:: DefineMarcusFinch [start] {"position":"825,650","size":"100,100"}
+"Marcus Finch is a consultant to the museum. He has always been eager for attention," Dr. Emily began, sounding worried. "He likes to be in the spotlight. If he stole the Sunstone, it could make him famous. He's very focused on his own success."
+
+She paused, looking thoughtful. "I've seen how far Marcus will go to get what he wants. But stealing an ancient artifact? I never thought he'd do something like that."
+
+[[Who is Professor Samuel Hayes->DefineProfessorSamuelHayes]]
+[[Who is Dr. Olivia Parker->DefineDrOliviaParker]]
+[[I think I have learned enough, I am ready to explore->BeginExploration]]
+
+
+:: DefineProfessorSamuelHayes [start] {"position":"1150,600","size":"100,100"}
+"Professor Samuel Hayes... well, he's a bit of a complicated case," Dr. Emily remarked, her voice carrying a hint of unease. "He's always had a rivalry with Marcus Finch, and it's no secret that their competition can get heated at times. From what I hear, Finch is pushing Professor Hayes out of academia."
+
+She paused, choosing her words carefully. "As for why he might steal the Sunstone... I suppose it could be a way for him to get back at Marcus, Hayes has always been driven by his desire to prove himself, especially in the face of competition."
+
+[[Who is Marcus Finch?->DefineMarcusFinch]]
+[[Who is Dr. Olivia Parker->DefineDrOliviaParker]]
+[[I think I have learned enough, I am ready to explore->BeginExploration]]
+
+
+:: DistractionBackpack [outside] {"position":"1850,1700","size":"100,100"}
+You could alert her about someone seeking her insight on her research, which might pique her interest and prolong her absence. Alternatively, you could utilize the nearby cart, easily tipped over to create a commotion that would draw her attention away.
+
+[[Tip the cart->TipCartDistraction]]
+[[Ask for insight on Dr. Oliver's research->OliviaResearchDistraction]]
+
+
+:: EasyCafe [cafe] {"position":"425,975","size":"100,100"}
+As you enter the Cafe, the smell of coffee surrounds you! Do you grab a cup of coffee or a cookie? 
+[[Grab a hot cup of coffee -> EasyProfessorSamuelHayes]]
+[[Grab a chocolate chip cookie -> EasyProfessorSamuelHayes]]
+
+
+:: EasyCheckTable [cafe] {"position":"325,1350","size":"100,100"}
+You decide to distract Professor Samuel Hayes by ordering him a hot coffee. As his name is called, he eagerly makes his way to the counter to collect his drink. Engaging in a conversation with the barista, he shares his expertise in ancient artifacts and the latest developments in his research. 
+
+[[Pick up sticky note ->EasyNotebook]]
+
+
+:: EasyEmilyWright [start] {"position":"800,525","size":"100,100"}
+"Thank you for your help, Detective! Early this rainy morning, our beautiful Sunstone was stolen, and my keycard went missing. I'm at a loss as to who would take such a precious artifact," she said, her voice tinged with distress.
+
+"Your assistance is greatly appreciated! I suspect three individuals: Marcus Finch, Professor Samuel Hayes, and Dr. Olivia Parker."
+
+As I'm here to help, I can offer some information on who each of the suspects are.
+
+[[Who is Marcus Finch?->DefineMarcusFinch]]
+[[Who is Professor Samuel Hayes->DefineProfessorSamuelHayes]]
+[[Who is Dr. Olivia Parker->DefineDrOliviaParker]]
+
+
+
+
+:: EasyFinchAgain [gallery] {"position":"1200,1300","size":"100,100"}
+Mr. Finch raises an eyebrow as you approach him. "What do you need from me?" he asks, his tone guarded.
+
+Talk to Mr. Finch:
+[[Ask where he was early in the morning -> EasyMorningFinch]]
+[[Ask about his shoes->FinchShoes]]
+[[Ask opinon on Professor Samuel Hayes->FinchOpinonHayes]]
+[[Ask opinon on Dr. Olivia Parker->FinchOpinonParker]]
+
+Locations:
+[[Current Location: Explore the Gallery-> EasyExploreGallery]]
+[[Maybe it's time to explore the Cafe->EasyCafe]]
+[[Nevermind, time to explore the Outdoor Exhibit->EasyOutdoorExhibit ]]
+
+Talk to Dr. Wright:
+[[Talk to Dr. Emily Wright about who you think the thief is->EasyTalkEmilyWright]]
+
+
+:: EasyFinchNotebook [gallery] {"position":"1175,1525","size":"100,100"}
+He looks at you with concern. "My privacy is quite important to me," he says, his tone guarded. "But I suppose I can allow it." He hands over the notebook reluctantly, adding, "But I assure you, Detective, you won't find anything incriminating in there."
+
+[[View notebook->EasyViewFinchNotebook]]
+
+
+:: EasyGarbageCan [cafe] {"position":"175,1375","size":"100,100"}
+You walk over to the garbage can, noticing the shiny object catching your eye.
+
+[[Search trash can -> EasyTrashCan]]
+
+
+:: EasyNice [gallery] {"position":"900,1275","size":"100,100"}
+Mr. Finch rolls his eyes dismissively. 
+
+"Clues, Detective? Sounds like wishful thinking to me. But hey, if you want to waste your time digging through the past, be my guest. Meanwhile, I'll be focusing on the here and now, more importantly, the missing Sunstone!"
+
+Talk to Mr. Finch:
+[[Talk to Mr. Finch->EasyFinchAgain]]
+
+Locations:
+[[Current Location: Explore the Gallery-> EasyExploreGallery]]
+
+
+:: EasyNotebook [cafe] {"position":"325,1500","size":"100,100"}
+<img src = "https://imgur.com/1bj5VHA.png" >
+[[Dust sticky note for fingerprints->HayesFingerPrint]]
+[[Talk to Professor Hayes->EasyProfessoSamuelHayesAgain]]
+[[Check Garbage Can ->EasyGarbageCan]]
+
+
+:: EasyOutdoorExhibit\  [outside] {"position":"1675,925","size":"100,100"}
+As you step into the Outdoor Exhibit, you're surrounded by lots of different plants and flowers. The air smells fresh and flowery, especially with the scent of roses nearby. Bees and butterflies are buzzing around, visiting each flower and spreading pollen.
+
+As you explore, one flower stands out to you.
+
+[[Take a closer look at the flower->MeetDrOlivia]]
+[[Admire the flower from a distance->MeetDrOlivia]]
+
+
+:: EasyPainting [gallery] {"position":"1025,1125","size":"100,100"}
+As you admire the painting, admiring the colors and techniques, Marcus Finch approaches you.
+
+"It's a beautiful piece from ancient Egypt in the years 1053 BC," he explains, gesturing to the plaque beside the sculpture. "This painting symbolizes the journey of the Nile River, with its flowing lines and vibrant colors representing the life-giving waters."
+
+While lost in thought, Marcus interrupts, his voice dripping with arrogance. "Ah, ancient history," he sneers. "How quaint. But tell me, Detective, do you really think studying old rocks and statues will help you catch a thief?"
+
+[[Definitely, Mr. Finch. Every piece of history holds clues we can use.->EasyNice]]
+[[Knowledge is power, Mr. Finch. Maybe you should try it sometime.->EasyRude]]
+
+
+:: EasyProfessoSamuelHayesAgain [cafe] {"position":"150,1075","size":"100,100"}
+"Yes, can I help you with anything?" suggests Professor Hayes, his tone polite but tinged with a hint of curiosity as he eyes you cautiously.
+
+Talk to Professor Hayes:
+[[Ask about theories->EasyTheories]]
+[[Ask where he was early in the morning -> EasyMorningProfessor]]
+[[Ask about his shoes->ProfessorShoes]]
+[[Ask about opinon on Marcus Finch->ProfessorOpinonMarcusFinch]]
+[[Ask about opinon on Dr. Olivia Parker ->ProfessorOpinonParker]]
+
+Locations:
+[[Current Location: Explore the Cafe -> EasyExploreCafe]]
+[[Maybe it's time to explore the Outdoor Exhibit->EasyOutdoorExhibit ]]
+[[I should check out the Artwork Gallery-> EasyArtworkGallery]]
+
+Talk to Dr. Wright:
+[[Talk to Dr. Emily Wright about who you think the thief is->EasyTalkEmilyWright]]
+
+
+:: EasyRude [gallery] {"position":"1050,1275","size":"100,100"}
+Mr. Finch scoffs, crossing his arms. "Oh, spare me the lecture, Detective. I'll stick to my methods, thank you very much. And trust me, they're far more effective. I may even figure out who stole the Sunstone before you!"
+
+Talk to Mr. Finch:
+[[Ask where he was early in the morning -> EasyMorningFinch]]
+[[Ask about his shoes->FinchShoes]]
+
+Locations:
+[[Current Location: Explore the Gallery-> EasyExploreGallery]]
+
+
+:: EasySculpture [gallery] {"position":"900,1125","size":"100,100"}
+As you admire the sculpture, reading about its history, Marcus Finch approaches you.
+
+"It's a beautiful piece from ancient Rome in the years 52 AD," he explains, gesturing to the plaque beside the sculpture. "The piece is meant to resemble a majestic Roman eagle, symbolizing strength and power."
+
+While lost in thought, Marcus interrupts, his voice dripping with arrogance. "Ah, ancient history," he sneers. "How quaint. But tell me, Detective, do you really think studying old rocks and statues will help you catch a thief?"
+
+[[Definitely, Mr. Finch. Every piece of history holds clues we can use.->EasyNice]]
+[[Knowledge is power, Mr. Finch. Maybe you should try it sometime.->EasyRude]]
+
+
+:: EasyTalkEmilyWright {"position":"1125,2050","size":"100,100"}
+You approach Dr. Emily Wright, noticing her pacing in the hallway with a worried expression.
+
+She stops pacing and looks at you, her voice trembling slightly as she asks, "Have you figured out anything yet?"
+
+Locations:
+[[I need to explore the Cafe again-> EasyExploreCafe]]
+[[I need to do a quick review on the Artwork Gallery-> EasyArtworkGallery]]
+[[I'll take one more glance at the Outdoor Exhibit-> ExploreOutdoor]]
+
+Conclusion:
+[[I am ready to make my deduction based on my findings ->EasyTalkEmilyWright2]]
+
+
+
+:: EasyTalkEmilyWright2 {"position":"1175,2225","size":"100,100"}
+As you speak, Dr. Wright listens attentively, her concern deepening with each word. You reassure her that you're committed to uncovering the truth, no matter where the evidence leads.
+
+[[The thief is Professor Samuel Hayes->ThiefSamuelHayes]]
+[[The thief is Marcus Finch->ThiefMarcusHayes]]
+[[The thief is Dr. Olivia Parker->ThiefOliviaParker]]
+
+
+:: EasyTheories [cafe] {"position":"500,1325","size":"100,100"}
+"Detective Data," Professor Hayes says, sounding a bit sour, "I've got a hunch about Finch, Marcus Finch. He is my rival and he is always craving attention, he is. Wouldn't shock me if he cooked up this whole thing to make himself look good. He's stolen much of my work and made it his own!"
+
+He stops for a moment, a sneaky grin on his face, then adds, "And as for that Sunstone... well, let's just say Finch isn't exactly a stranger to bending the rules to get what he wants. Keep your eyes peeled, Detective. This case might be trickier than it seems."
+
+Talk to Professor Hayes:
+[[Talk to Professor Hayes again->EasyProfessoSamuelHayesAgain]]
+
+
+
+
+
+:: EasyVandalizedPlaque\  [gallery] {"position":"1050,1650","size":"100,100"}
+As you head towards the plaque, you catch Mr. Finch giving you a sideways glance. He looks suspicious but acts calm. He avoids meeting your gaze as you move closer to the plaque.
+
+[[View Plaque->EasyViewPlaque]]
+[[Ask to look into Mr. Finch's notebook->EasyFinchNotebook]]
+
+
+:: EasyViewFinchNotebook [gallery] {"position":"1225,1675","size":"100,100"}
+<img src = "https://imgur.com/1ky2cbx.png" >
+
+
+Investigate:
+[[Dust for fingerprints->FinchFingerprints]]
+[[Investigate the vandalized plaque->EasyVandalizedPlaque ]]
+
+Talk to Mr. Finch:
+[[Talk to Mr. Finch ->EasyFinchAgain]]
+
+
+:: EasyViewPlaque [gallery] {"position":"1075,1850","size":"100,100"}
+<img src = "https://imgur.com/ZiKNu9g.png" >
+
+As you observe Mr. Finch, you notice a subtle shift in his gaze, almost as if he's trying to avoid something. Suddenly, he turns to you with a forced smile, his voice carrying a hint of defensiveness. "Oh, you know how kids can be," he hastily interjects, "always causing mischief... Let's focus on the real issue at hand, shall we?
+
+Investigate:
+[[Ask to look into Mr. Finch's notebook->EasyFinchNotebook]]
+
+Talk to Mr. Finch:
+[[Talk to Mr. Finch ->EasyFinchAgain]]
+
+
+:: FinchArgue [gallery] {"position":"1450,2675","size":"100,100"}
+He bursts into uncontrollable laughter, the sound echoing through the room. "You truly believe I stole the Sunstone? That's utterly hilarious!" He shakes his head, still chuckling. "Are you certain you were hired as museum security, or perhaps you're here for comedic relief?"
+
+[[Want to try and solve the mystery again?->EasyEmilyWright]]
+
+
+:: FinchFingerprints [gallery] {"position":"1300,1900","size":"100,100"}
+<img src = "https://imgur.com/InKkUK8.png" >
+
+Talk to Mr. Finch:
+[[Talk to Mr. Finch->EasyFinchAgain]]
+
+Investigate:
+[[Investigate the vandalized plaque->EasyVandalizedPlaque ]]
+
+
+
+
+:: FinchOpinonHayes [gallery] {"position":"1325,1550","size":"100,100"}
+"Professor Hayes? Yeah, he's always there with his coffee, acting all wise," Marcus Finch remarks, taking a sip from his own cup. "He's got that old man vibe, you know? Bald and man. But hey, I gotta admit, he's kinda charming when he's not giving me the evil eye."
+
+"I don't think Hayes has the energy to pull off stealing the Sunstone," Marcus Finch reflects, his brow furrowed in thought. "But I've heard some rumors that he's being pushed out by the other professors." He shrugs casually. "Guess it's true what they say, can't teach an old dog new tricks."
+
+[[Talk to Mr. Finch again->EasyFinchAgain]]
+[[Ask opinon on Dr. Olivia Parker->FinchOpinonParker]]
+
+
+:: FinchOpinonParker [gallery] {"position":"1500,1550","size":"100,100"}
+"Dr. Olivia Parker? She seems pretty intense," Marcus Finch comments, scratching his chin in thought. "I remember the first time I met her, she was going on about her research getting defunded. I gotta give it to her, though – she's definitely passionate about what she does. But, uh, yeah, she did come off a bit aggressive. I don't know if she'd stoop to stealing the Sunstone, but hey, that thing's worth millions, right? Would certainly solve her funding problem."
+
+[[Talk to Mr. Finch again->EasyFinchAgain]]
+[[Ask opinon on Professor Samuel Hayes->FinchOpinonHayes]]
+
+
+
+:: FinchShoes [gallery] {"position":"1450,1400","size":"100,100"}
+<img src = "https://imgur.com/fMhCDky.png">
+Mr. Finch raises his right foot, stooping to pluck a stubborn rock wedged beneath it. "Is this what you're after?" he scoffs, his tone tinged with annoyance.
+
+Talk to Mr. Finch:
+[[Talk to Mr. Finch->EasyFinchAgain]]
+
+
+:: HayesAlibai [caught] {"position":"225,2600","size":"100,100"}
+"Does everyone need an alibi these days? I have my own personal business to attend to, and it's clearly not yours," Professor Hayes responds, his tone defensive. He begins to sweat, nervously shifting his eyes. "Either way, that's still nothing to pin me down."
+
+[[Dr. Olivia said she saw you climbing in through the window ealier this week ->HayesOliviaWindow]]
+[[Your mom called and said you did it->HayesMother]]
+[[Your shoes match the scene of the crime->HayesShoes]]
+
+
+:: HayesArgue [cafe] {"position":"0,3050","size":"100,100"}
+Professor Hayes cuts you off quickly, "You come in here, accusing me without a shred of evidence. Detective, perhaps it's time you reconsider your career choice."
+
+As everyone leaves, you're left pondering what you might have overlooked.
+
+[[Want to try and solve the mystery again?->EasyEmilyWright]]
+
+
+:: HayesFinchAccuse [cafe] {"position":"375,2600","size":"100,100"}
+Mr. Finch," he chuckles. I rarely collaborate with the man. I wouldn't take any accusations from him seriously. Anything else?"
+
+[[Dr. Olivia said she saw you climbing in through the window ealier this week ->HayesOliviaWindow]]
+[[Your mom called and said you did it->HayesMother]]
+[[Your shoes match the scene of the crime->HayesShoes]]
+
+
+:: HayesFingerPrint [cafe] {"position":"325,1650","size":"100,100"}
+<img src = "https://imgur.com/Hx4fRwP.png" >
+[[Talk to Professor Hayes again->EasyProfessoSamuelHayesAgain]]
+[[Check Garbage Can ->EasyGarbageCan]]
+
+
+:: HayesFingerprint [caught] {"position":"350,2450","size":"100,100"}
+"My fingerprints?" Professor Hayes looks around nervously, his behavior shifting. "Well, you know I had to enter the building to look at some artifacts. Of course, that can be your only reasoning for accusing me of stealing the Sunstone. Any more of this 'proof' you have on me, Detective?"
+
+[[We did scent analysis and your scent is here->HayesScent]]
+[[You have no alibai from when the Sunstone was stolen->HayesAlibai]]
+[[Mr. Finch claimed he saw you steal the Sunstone->HayesFinchAccuse]]
+
+
+:: HayesFootage [cafe] {"position":"875,2475","size":"100,100"}
+"Do you have any idea how ancient this museum is? You'd think a detective would notice first that there aren't any cameras around here."
+
+[[We did scent analysis and your scent is here->HayesScent]]
+[[You have no alibai from when the Sunstone was stolen->HayesAlibai]]
+[[Mr. Finch claimed he saw you steal the Sunstone->HayesFinchAccuse]]
+
+
+:: HayesHair [cafe] {"position":"700,2475","size":"100,100"}
+"Check my hair? Look closer—I'm as bald as they come!"
+
+[[We did scent analysis and your scent is here->HayesScent]]
+[[You have no alibai from when the Sunstone was stolen->HayesAlibai]]
+[[Mr. Finch claimed he saw you steal the Sunstone->HayesFinchAccuse]]
+
+
+:: HayesMother [cafe] {"position":"425,2775","size":"100,100"}
+"Detective, really? My mother? You're reaching if you believe any of that. Seriously."
+
+He turns his back about to walk away when he turns around, "Oh, tell your mother hello from me."
+
+[[Try to argue against it.->HayesArgue]]
+
+
+:: HayesOliviaWindow [cafe] {"position":"275,2775","size":"100,100"}
+"Ha ha ha! You think I can still squeeze through windows at 63? You've got the wrong guy, buddy. I might be old, but I'm not that agile anymore."
+
+[[Try to argue against it.->HayesArgue]]
+
+
+:: HayesScent [cafe] {"position":"525,2600","size":"100,100"}
+"Oh, good heavens. Are you serious about scent analysis? Well, Detective, if your reputation precedes you as they say, then I'm concerned for the future," he says, looking at you smugly.
+
+[[Dr. Olivia said she saw you climbing in through the window ealier this week ->HayesOliviaWindow]]
+[[Your mom called and said you did it->HayesMother]]
+[[Your shoes match the scene of the crime->HayesShoes]]
+
+
+:: HayesShoes [caught] {"position":"75,2775","size":"100,100"}
+"My shoes? I never showed you my shoes. What a ridiculous accusation," he says, his eyes shifting and his voice cracking.
+
+[[I saw your shoe prints in the Outdoor Exhibit->HayesShoesOutdoor]]
+[[You showed me remember->HayesShoesShowed]]
+
+
+:: HayesShoesOutdoor [caught] {"position":"150,2925","size":"100,100"}
+Professor Hayes checks the bottom of his shoes, finding them covered in mud. His face flushes with embarrassment.
+
+"I was going to be replaced by Marcus Finch," he admits, his voice shaky with emotion. "I had to do something to save my career. Imagine spending your whole life making progress, only to see it all vanish in an instant."
+
+"Stealing the Sunstone was my only shot at redemption!" he bursts out angrily, his voice laced with frustration. "And now that it's gone... What am I going to do now?"
+
+[[Have Professor Hayes arrested -> HayesArrested]]
+
+
+:: HayesShoesShowed [cafe] {"position":"25,2925","size":"100,100"}
+"I never showed you my shoes. You're living in a world of lies," he scoffs. "Accusing me of stealing the Sunstone? How pitiful. Perhaps pay attention next time."
+
+[[Try to argue against it.->HayesArgue]]
+
+
+:: HayesTrashFingerprints [cafe] {"position":"175,1725","size":"100,100"}
+
+<img src = "https://imgur.com/6Ij0K9x.png" >
+[[Distract Professor Samuel Hayes to check the table->EasyCheckTable]]
+
+[[Talk to Professor Hayes again->EasyProfessoSamuelHayesAgain]]
+
+
+:: InvestigateCase [start] {"position":"1375,800","size":"100,100"}
+<img src = "https://imgur.com/r1lii9F.png"  >
+
+Investigate:
+[[Investigate the muddy foot print->InvestigateFootPrint]]
+
+Let's begin exploring:
+[[Maybe I'll begin in the Artwork Gallery -> EasyArtworkGallery]]
+[[Let me start in the Cafe->EasyCafe]]
+[[I'll begin in the Outdoor Exhibit->EasyOutdoorExhibit ]]
+
+
+:: InvestigateFootPrint [start] {"position":"1200,850","size":"100,100"}
+<img src = "https://imgur.com/4czckiJ.png" >
+
+Investigate:
+[[See what the Sunstone looks like->InvestigateCase]]
+
+Let's begin exploring:
+[[Maybe I'll begin in the Artwork Gallery -> EasyArtworkGallery]]
+[[Let me start in the Cafe->EasyCafe]]
+[[I'll begin in the Outdoor Exhibit->EasyOutdoorExhibit ]]
+
+
+:: InvestigateOliviaShoes [outside] {"position":"2300,1700","size":"100,100"}
+<img src = "https://imgur.com/QiQRLBi.png" >
+
+Investigate:
+[[Look down to see Professor Sam's shoe print->ProfessorSamShoePrint]]
+
+ Talk to Dr. Olivia:
+[[Talk to Dr. Olivia->TalktoDrOliviaAgain]]
+
+
+:: InvestigateTimeStamps {"position":"1625,675","size":"100,100"}
+<img src = "https://imgur.com/pSxU43w.png" >
+
+Investigate:
+[[See what the Sunstone looks like->InvestigateCase]]
+[[Investigate the muddy footprint->InvestigateFootPrint]]
+
+Let's begin exploring:
+[[Maybe I'll begin in the Artwork Gallery -> EasyArtworkGallery]]
+[[Let me start in the Cafe->EasyCafe]]
+[[I'll begin in the Outdoor Exhibit->EasyOutdoorExhibit ]]
+
+
+
+
+:: MarcusAlibi [gallery] {"position":"1400,2525","size":"100,100"}
+"My alibi was crystal clear—I was at the charity event, remember? I even handed you my notebook to confirm it. Maybe you didn't give it a thorough enough look. It's rather surprising for a detective not to pay attention to such crucial details."
+
+
+[[Your finerprint was found on the keycard->MarcusFingerprint]]
+[[Try to argue against it.->FinchArgue]]
+
+
+:: MarcusFingerprint [gallery] {"position":"1525,2525","size":"100,100"}
+"Why would I even need a keycard when I always come in during regular hours? I'm a consultant, not a thief. These hands have never been involved in any sort of theft, I can assure you of that, Detective.
+
+[[You have no alibi on the night the Sunstone was stolen ->MarcusAlibi]]
+[[Try to argue against it.->FinchArgue]]
+
+
+:: MeetDrOlivia [outside] {"position":"1675,1050","size":"100,100"}
+"Hello there," Dr. Olivia greeted you with a warm smile as she approached. "Isn't it lovely out here? I've always found the Outdoor Exhibit to be quite serene."
+
+ "I couldn't help but notice your interest in that particular flower. It's a rare species native to this region, known for its vibrant colors and delicate fragrance. Though of course, I know you're not here to learn about plants but rather locate the Sunstone!"
+ 
+ She adds, "Let me be of service in any way possible!"
+ 
+ Talk to Dr. Olivia:
+[[Talk to Dr.Olivia->TalktoDrOliviaAgain]]
+
+Locations:
+[[Explore the Outdoor Exhibit-> ExploreOutdoor]]
+
+
+:: OliviaArgue [outside] {"position":"1000,2700","size":"100,100"}
+"I've had enough, Detective. It seems like you're more focused on accusing me than actually solving the mystery. I'll leave you to it. As for your career, I wish you the best. But from where I stand, it seems like it might be over."
+
+As everyone leaves, you're left pondering what you might have overlooked.
+
+[[Want to try and solve the mystery again?->EasyEmilyWright]]
+
+
+:: OliviaBusTIcket [outside] {"position":"2050,1350","size":"100,100"}
+Dr. Olivia considers your request for a moment before nodding. "Certainly," she replies, her tone still guarded. "Let me find it for you."
+
+<img src = "https://imgur.com/1j4kysB.png" >
+
+Investigate:
+[[Dust for fingerprints->Oliviafingerprints]]
+
+ Talk to Dr. Olivia:
+[[Talk to Dr.Olivia->TalktoDrOliviaAgain]]
+
+
+:: OliviaFingerprint [outside] {"position":"1000,2575","size":"100,100"}
+Her brows furrowed in confusion, disbelief evident in her voice. "My fingerprint? Why on earth would I use Dr. Parker's key card when I have my own? It simply doesn't make any sense. There must be some kind of mistake here." She shook her head, trying to make sense of the accusation. "I mean, think about it logically. Why would I go through all the trouble of using someone else's card when I have my own access? It just doesn't add up."
+
+[[Your shoes are a match at the scene of the crime->OliviaShoesMatch]]
+[[Try to argue against it.->OliviaArgue]]
+
+
+:: OliviaFundingRequest [outside] {"position":"1700,2150","size":"100,100"}
+<img src = "https://imgur.com/l9VPQAf.png" >
+
+Investigate:
+[[I should look in her notebook->OliviaNotebook]]
+
+Talk to Dr. Olivia:
+[[Talk to Dr. Olivia again->TalktoDrOliviaAgain]]
+
+
+
+:: OliviaJobDescription [outside] {"position":"1750,1175","size":"100,100"}
+Dr. Olivia's smile stays friendly, but she looks a bit mysterious as she replies, "Oh, I do a bit of this and that. I'm into uncovering secrets from the past. But lately, things have been tough with funding getting cut and all."
+
+She waves it off like it's no big deal, but you sense there's more to the story. "But let's talk about you. What can I help you with today?"
+
+ Talk to Dr. Olivia:
+[[Talk to Dr. Olivia->TalktoDrOliviaAgain]]
+
+
+
+:: OliviaMorningLocation [outside] {"position":"1950,1150","size":"100,100"}
+Ah, this morning, I was actually in a meeting discussing our museum's funding," she reveals, her tone guarded. There's a hint of tension in her voice as she continues, "It wasn't the most pleasant news. I found out that our funding is going to be cut."
+
+She pauses, then adds, "But despite that, I do have a bus ticket from this morning. I was attending a conference out of town, so I wasn't even at the museum when the Sunstone went missing."
+
+Investigate:
+[[Ask to view bus ticket->OliviaBusTIcket]]
+
+
+
+:: OliviaNotebook [outside] {"position":"1900,2150","size":"100,100"}
+<img src = "https://imgur.com/p5xJzvT.png" >
+
+Investigate:
+[[Look at the Request for funding document->OliviaFundingRequest]]
+
+Talk to Dr. Olivia:
+[[Talk to Dr. Olivia again->TalktoDrOliviaAgain]]
+
+
+
+:: OliviaOpinionFinch [outside] {"position":"2150,1575","size":"100,100"}
+"In one word: a character... he's quite ambitious."
+
+"Always seeking recognition and fame in the academic world. While I admire his determination, I can't help but feel there's a sense of superficiality about him. It's as if he's more focused on his own image than the actual pursuit of knowledge."
+
+ Talk to Dr. Olivia:
+[[Talk to Dr.Olivia->TalktoDrOliviaAgain]]
+
+
+:: OliviaOpinonHayes [outside] {"position":"2000,1575","size":"100,100"}
+"He's been in academia for ages, and I suppose he's earned his reputation. But lately, it seems like he's clinging to the past. I've heard rumors about clashes with other professors and his research falling behind."
+
+"Truthfully, I think he's stuck in his ways. I can only imagine that stealing the Sunstone and then rediscovering it could make him feel respected again. It's not easy seeing your career fade away, especially after dedicating your life to it."
+
+
+ Talk to Dr. Olivia:
+[[Talk to Dr.Olivia->TalktoDrOliviaAgain]]
+
+
+:: OliviaResearchDistraction [outside] {"position":"2050,1825","size":"100,100"}
+You approach Dr. Olivia and discreetly mention that someone is seeking her insight on her research, emphasizing the importance of her expertise. Intrigued, Dr. Olivia decides to investigate further, eager to share her knowledge.
+
+[[Open backpack->OpenBackpack]]
+
+
+:: OliviaShoes [outside] {"position":"2275,1550","size":"100,100"}
+"You're interested in my shoes? If you want to see shoes, ask Professor Hayes. He's always tracking in mud. If you want to see his footprint, just look down. He's always leaving messes, and I have to clean them up."
+
+"As for seeing my shoes, I guess..."
+
+Investigate:
+[[Look at Dr. Olivia's shoes->InvestigateOliviaShoes]]
+[[Look down to see Professor Sam's shoe print->ProfessorSamShoePrint]]
+
+ Talk to Dr. Olivia:
+[[Talk to Dr. Olivia->TalktoDrOliviaAgain]]
+
+
+
+
+:: OliviaShoesMatch [outside] {"position":"1125,2575","size":"100,100"}
+"My shoes? I showed you mine! But the print was from a man's shoe. I always wear heels, why would I wear men's shoes? This feels more like a personal issue than about the theft."
+
+[[Your finerprint was found on the keycard->OliviaFingerprint]]
+[[Try to argue against it.->OliviaArgue]]
+
+
+:: Oliviafingerprints [outside] {"position":"2225,1350","size":"100,100"}
+<img src = "https://imgur.com/lvs0fRK.png" >
+
+Talk to Dr. Olivia:
+[[Talk to Dr.Olivia->TalktoDrOliviaAgain]]
+
+
+:: OpenBackpack [outside] {"position":"1775,2000","size":"100,100"}
+As you carefully open Dr. Olivia's backpack, you notice a notebook filled with her research findings and a document requesting additional funding.
+
+Investigate:
+[[I should look in her notebook->OliviaNotebook]]
+[[Look at the Request for funding document->OliviaFundingRequest]]
+
+Talk to Dr. Olivia:
+[[Talk to Dr. Olivia again->TalktoDrOliviaAgain]]
+
+
+
+
+:: ProfessorOpinonMarcusFinch [cafe] {"position":"150,1250","size":"100,100"}
+Professor Hayes scowls at the mention of Marcus Finch. "Marcus Finch," he grumbles, his frustration evident. 
+
+"He's always chasing after recognition, no matter what. I wouldn't put it past him to steal the Sunstone just to make a spectacle of himself. But what kind of recognition he's after, I can't say. All I know is, he'll do anything to get it, and it's not something I admire."
+
+Talk to Professor Hayes:
+[[Maybe I'll talk to Professor Hayes ->EasyProfessoSamuelHayesAgain]]
+[[Ask about opinon on Dr. Olivia Parker ->ProfessorOpinonParker]]
+
+
+:: ProfessorOpinonParker [cafe] {"position":"0,1250","size":"100,100"}
+"She seems nice. I spoke to her briefly when I arrived early and was notified about the Sunstone missing. I also heard her earlier this week in an argument about her research funding being cut. I can only imagine how desperate she may feel to continue her research."
+
+Talk to Professor Hayes:
+[[Maybe I'll talk to Professor Hayes ->EasyProfessoSamuelHayesAgain]]
+[[Ask about opinon on Marcus Finch->ProfessorOpinonMarcusFinch]]
+
+
+
+:: ProfessorSamShoePrint [outside] {"position":"2500,1675","size":"100,100"}
+<img src = "https://imgur.com/Gtn0jIJ.png" >
+
+Investigate:
+[[Look at Dr. Olivia's shoes->InvestigateOliviaShoes]]
+
+ Talk to Dr. Olivia:
+[[Talk to Dr. Olivia->TalktoDrOliviaAgain]]
+
+
+:: ProfessorShoes [cafe] {"position":"475,1475","size":"100,100"}
+"My shoes? Great heavens Detective, I don't see how my shoes can pertain to such a case. "
+
+[[Maybe I'll talk to Professor Hayes ->EasyProfessoSamuelHayesAgain]]
+
+
+
+:: SoilInvestigation [outside] {"position":"1700,1600","size":"100,100"}
+<img src = "https://imgur.com/qSyOdLK.png" >
+
+ Talk to Dr. Olivia:
+[[Talk to Dr. Olivia->TalktoDrOliviaAgain]]
+
+
+
+
+:: TalktoDrOliviaAgain [outside] {"position":"1875,1325","size":"100,100"}
+Dr. Olivia looks your way,  "Is everything okay?" she asks, her tone filled with concern. "Can I assist you with something?"
+
+ Talk to Dr. Olivia:
+[[Ask about whereabout this morning ->OliviaMorningLocation]]
+[[Ask about her shoes->OliviaShoes]]
+[[Ask for opinion on Professor Hayes->OliviaOpinonHayes]]
+[[Ask for opinion on Marcus Finch->OliviaOpinionFinch]]
+
+Locations:
+[[Explore the Outdoor Exhibit-> ExploreOutdoor]]
+[[Maybe it's time to explore the Cafe->EasyCafe]]
+[[I should move onto the Artwork Gallery-> EasyArtworkGallery]]
+
+Talk to Dr. Wright:
+[[Talk to Dr. Emily Wright about who you think the thief is->EasyTalkEmilyWright]]
+
+
+:: ThiefMarcusHayes [gallery] {"position":"1400,2400","size":"100,100"}
+Marcus Hayes lets out a loud laugh. "Oh, really, Detective? You suspect me? Well, I must say, I'm quite intrigued to hear your reasoning behind this accusation. Please, indulge me. I'm genuinely curious to understand why you would point the finger at me."
+
+[[You have no alibi on the night the Sunstone was stolen ->MarcusAlibi]]
+[[Your finerprint was found on the keycard->MarcusFingerprint]]
+
+
+:: ThiefOliviaParker [outside] {"position":"1100,2400","size":"100,100"}
+Her eyes widened, a tremble in her voice betraying her shock and hurt. "Wait, me? How could you even think that? Did I do something to make you suspect me? Please, I swear I didn't do it! You've got to believe me!" Her plea was desperate.
+
+[[Your shoes are a match at the scene of the crime->OliviaShoesMatch]]
+[[Your finerprint was found on the keycard->OliviaFingerprint]]
+
+
+:: ThiefSamuelHayes [cafe] {"position":"900,2325","size":"100,100"}
+Samuel's eyes widen in shock, but he quickly recovers, a defiant expression crossing his face. "How dare you accuse me of such a thing?" he retorts, his voice dripping with indignation. "You have no proof!"
+
+[[Your fingerprint was on the keycard->HayesFingerprint]]
+[[You hair was found at the crime scene->HayesHair]]
+[[Security footage caught you entering the building->HayesFootage]]
+[[Your shoe print matches the one found at the Sunstone ->HayesShoes]]
+
+
+:: TipCartDistraction [outside] {"position":"1850,1850","size":"100,100"}
+With a quick glance around to ensure no one is watching too closely, you carefully nudge the cart, causing it to wobble dangerously on its wheels.
+
+Surprised by the noise, Dr. Olivia quickly goes to see what happened. While she's busy with the mess, you use the chance to search her backpack.
+
+[[Open backpack->OpenBackpack]]
+
+
+:: ViewSunstone [start] {"position":"1150,725","size":"100,100"}
+Among the broken glass by the empty display case, you notice a muddy footprint on the shiny museum floor. It's a sign that someone was here, maybe involved in the Sunstone's disappearance. This footprint is an important clue—it tells us someone might have been up to something. But what were they after—recognition, control, or power?
+
+Investigate:
+[[See what the Sunstone looks like->InvestigateCase]]
+[[Investigate the muddy footprint->InvestigateFootPrint]]
+[[Investigate the time stamps to the museum->InvestigateTimeStamps]]
+
+Let's begin exploring:
+[[Maybe I'll begin in the Artwork Gallery -> EasyArtworkGallery]]
+[[Let me start in the Cafe->EasyCafe]]
+[[I'll begin in the Outdoor Exhibit->EasyOutdoorExhibit ]]
+
+
+
+
+:: Welcome [start] {"position":"800,225","size":"100,100"}
+Welcome to "Detective D.A.T.A: Deciphering Analytical Twists & Adventures"! You play as Detective Data, solving the mystery of the stolen Sunstone from the Museum of Antiques. Use your data analysis skills along with logical and deduction to catch the thief!
+
+[[Let's catch the thief -> EasyAct1]]
+
+
+:: StoryStylesheet [stylesheet]
+tw-story[tags~="start"] {
+  background-color: #202124;
+}
+
+tw-story[tags~="cafe"] {
+  background-color:#8E4720 ;
+}
+
+tw-story[tags~="gallery"] {
+  background-color:#AA7057;
+}
+
+tw-story[tags~="outside"] {
+  background-color:#404626;
+}
+
+tw-story[tags~="caught"] {
+  background-color:#4C0507;
+}
+
+tw-link {
+ color: #B7B1AC ; 
+}
+
+.enchantment-link:hover, tw-link:hover {
+ color: #5B5958;
+}
